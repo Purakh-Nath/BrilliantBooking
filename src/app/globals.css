@@ -1,33 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.customShadow {
+    box-shadow: 5.67px 5.67px 3.78px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 18px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.buttonShadow {
+    box-shadow: -0.5px -0.5px 6.9px 0px rgba(255,255,255,0.25) , 9px 10px 7.1px 0px rgba(0, 0, 0, 0.4), inset 0px 0px 48.91px 0px rgba(255,255,255,0.05), inset 0px 3.26px 3.26px 0px rgba(255, 255, 255, 0.15);
+    /* box-shadow: inset 0px 3.26px 3.26px 0px rgba(255, 255, 255, 0.15), inset 0px 0px 48.91px -10px rgba(255,255,255,1), 9px 10px 7.1px 0px rgba(0, 0, 0, 0.4) ; */
+    border-radius: 104px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.navButtonShadow {
+    box-shadow: 4px 5px 40px 10px rgba(16, 18, 19, 1);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.circleButtonShadow {
+    box-shadow: 5px -3px 30px -10px rgba(150,190,231,1), 4px 5px 30px 5px rgba(16,18,19,1);
 }
